@@ -61,13 +61,44 @@ cd nexus-counter-app
 npm install
 ```
 
-2. Deploy the smart contract:
-```bash
-cd contracts
-npx hardhat run scripts/deploy.ts --network nexus
+2.  Install Hardhat & Dependencies"
+```
+npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox dotenv ethers
 ```
 
-3. Configure the frontend:
+3. Set up **Nexus Testnet in MetaMask*** (if not added yet):
+   - Network Name: `Nexus Testnet`
+   - Chain ID: `392`
+   - RPC URL: `https://rpc.nexus.xyz/http`
+   - WebSocket URL: `wss://rpc.nexus.xyz/ws`
+   - Explorer: `https://explorer.nexus.xyz`
+
+4. Set up your `.env` file (create a new file if it doesn't exist):
+```
+touch .env
+```
+```
+nano .env
+```
+- format: `PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE` (***Replace `0xYOUR_PRIVATE_KEY_HERE` with your real private key***.)
+
+5. Go to the contracts folder:
+```
+cd contracts
+```
+
+6. Compile the contract:
+```
+npx hardhat compile
+```
+
+7. Deploy the contract to Nexus Testnet:
+```
+npx hardhat run scripts/deploy.ts --network nexus
+```
+- Copy the Contract
+
+8. Configure the frontend:
 Configure the frontend to use the deployed contract address on Nexus.
 
 Modify the `frontend/src/app/page.tsx` file to use the deployed contract address:
@@ -76,12 +107,16 @@ Modify the `frontend/src/app/page.tsx` file to use the deployed contract address
 const CONTRACT_ADDRESS = 'your_deployed_contract_address' // You'll need to update this after deploying to Nexus
 ```
 
-1. Start the NextJS development server:
+9. Start the NextJS development server:
 
 ```bash
 cd frontend
 npm run dev
 ```
+- This will launch the dApp locally at: `http://localhost:3000`
+
+![image](https://github.com/user-attachments/assets/7a1f0a22-cce7-4ed2-bb8a-ac3a89f294a8)
+
 
 ## Using the dApp
 
