@@ -109,6 +109,9 @@ Modify the `frontend/src/app/page.tsx` file to use the deployed contract address
 const CONTRACT_ADDRESS = 'your_deployed_contract_address' // You'll need to update this after deploying to Nexus
 ```
 
+![image](https://github.com/user-attachments/assets/85b5d2a7-120b-44d4-8667-cbf5bc123493)
+
+
 8. Start the NextJS development server:
 
 ```bash
@@ -124,6 +127,7 @@ npm run frontend
 
 ![image](https://github.com/user-attachments/assets/7a1f0a22-cce7-4ed2-bb8a-ac3a89f294a8)
 
+- Open the **Local host** and Connect Wallet
 
 ## Using the dApp
 
