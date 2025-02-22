@@ -52,6 +52,8 @@ contract Counter {
 }
 ```
 
+- Deploying in a Codespace: [codespaces](https://github.com/codespaces)
+
 ## Installation & Setup
 
 1. Clone and install dependencies:
