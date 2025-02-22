@@ -90,15 +90,11 @@ cd contracts
 6. Compile the contract:
 ```
 npx hardhat compile
-```
-
-7. Deploy the contract to Nexus Testnet:
-```
 npx hardhat run scripts/deploy.ts --network nexus
 ```
 - Copy the Contract
 
-8. Configure the frontend:
+7. Configure the frontend:
 Configure the frontend to use the deployed contract address on Nexus.
 
 Modify the `frontend/src/app/page.tsx` file to use the deployed contract address:
@@ -107,11 +103,16 @@ Modify the `frontend/src/app/page.tsx` file to use the deployed contract address
 const CONTRACT_ADDRESS = 'your_deployed_contract_address' // You'll need to update this after deploying to Nexus
 ```
 
-9. Start the NextJS development server:
+8. Start the NextJS development server:
 
 ```bash
 cd frontend
 npm run dev
+```
+- If you encounter an error, try this command.:
+```
+cd /workspaces/codespaces-blank/nexus-counter-app
+npm run frontend
 ```
 - This will launch the dApp locally at: `http://localhost:3000`
 
