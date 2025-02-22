@@ -80,8 +80,12 @@ touch .env
 ```
 nano .env
 ```
-- format: `PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE` (***Replace `0xYOUR_PRIVATE_KEY_HERE` with your real private key***.)
-
+- format:
+```
+PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE
+```
+- (***Replace `0xYOUR_PRIVATE_KEY_HERE` with your real private key***.)
+  
 5. Go to the contracts folder:
 ```
 cd contracts
