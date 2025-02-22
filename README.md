@@ -52,7 +52,7 @@ contract Counter {
 }
 ```
 
-- Deploying in a Codespace: [codespaces](https://github.com/codespaces)
+- You can use **Codespaces** to deploy the **`Counter App`** here: [codespaces](https://github.com/codespaces)
 
 ## Installation & Setup
 
